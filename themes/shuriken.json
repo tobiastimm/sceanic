@@ -16,16 +16,16 @@
     "editorError.foreground": "#E15A60",
     "editorMarkerNavigation.background": "#21252b",
     "editorRuler.foreground": "#abb2bf26",
-    "editor.lineHighlightBackground": "#65737e30",
+    "editor.lineHighlightBackground": "#66747f30",
     "editor.selectionBackground": "#67769660",
     "editor.selectionHighlightBackground": "#ffffff10",
     "editorCursor.background": "#ffffffc9",
-    "editor.findMatchHighlightBackground": "#314365",
-    "editor.wordHighlightBackground": "#484e5b",
+    "editor.findMatchHighlightBackground": "#fbdd8390",
+    "editor.wordHighlightBackground": "#ffffff40",
     "editor.wordHighlightStrongBackground": "#abb2bf26",
     "editorGroup.background": "#181A1F",
     "editorGroup.border": "#181A1F",
-    "editorIndentGuide.background": "#3B4048",
+    "editorIndentGuide.background": "#ffffff1a",
     "editorLineNumber.foreground": "#495162",
     "editorWhitespace.foreground": "#3B4048",
     "editorHoverWidget.background": "#21252B",
@@ -38,6 +38,7 @@
     "gitDecoration.deletedResourceForeground": "#E15A60",
     "gitDecoration.untrackedResourceForeground": "#99C794",
     "gitDecoration.conflictingResourceForeground": "#E15A60",
+    "gitDecoration.ignoredResourceForeground": "#64727f",
     "input.background": "#1d1f23",
     "list.highlightForeground": "#C5C5C5",
     "peekViewEditor.matchHighlightBackground": "#29244b",
@@ -63,42 +64,42 @@
     "terminal.ansiBrightMagenta": "#C594C5",
     "terminal.ansiCyan": "#5FB3B3",
     "terminal.ansiBrightCyan": "#5FB3B3",
-    "terminal.ansiWhite": "#D4D4D4",
-    "terminal.ansiBrightWhite": "#D4D4D4",
-    "titleBar.activeForeground": "#9da5b4",
+    "terminal.ansiWhite": "#ced4de",
+    "terminal.ansiBrightWhite": "#ced4de",
+    "titleBar.activeForeground": "#a7adba",
     "titleBar.inactiveForeground": "#6B717D",
-    "dropdown.border": "#2b303b",
-    "editor.background": "#2b303b",
-    "editor.foreground": "#d4d4d4",
+    "dropdown.border": "#1a2a32",
+    "editor.background": "#1a2a32",
+    "editor.foreground": "#ced4de",
     "editorCursor.foreground": "#b6bcc4",
-    "editorGroupHeader.tabsBorder": "#2b303b",
-    "editorGroupHeader.tabsBackground": "#1c1f26",
-    "editorGutter.background": "#2b303b",
-    "gitDecoration.ignoredResourceForeground": "#64727f",
+    "editorGroupHeader.tabsBorder": "#1a2a32",
+    "editorGroupHeader.tabsBackground": "#0f1e28",
+    "editorGutter.background": "#1a2a32",
+    "editorGutter.foreground": "#ffffff33",
     "list.activeSelectionBackground": "#343d46",
     "list.activeSelectionForeground": "#dfe1e8",
     "list.inactiveSelectionBackground": "#343d46",
     "list.inactiveSelectionForeground": "#dfe1e8",
     "list.focusBackground": "#343d46",
-    "list.focusForeground": "#dfe1e8",
+    "list.focusForeground": "#a7adba",
     "list.hoverBackground": "#232830",
     "list.hoverForeground": "#c0c5cd",
-    "panel.background": "#232830",
-    "panel.border": "#232830",
+    "panel.background": "#0f1e28",
+    "panel.border": "#0f1e28",
     "scrollbar.shadow": "#282c35",
     "scrollbarSlider.activeBackground": "#495162",
     "scrollbarSlider.background": "#4951629F",
     "scrollbarSlider.hoverBackground": "#495162",
     "sideBar.background": "#232830",
     "sideBar.border": "#232830",
-    "sideBar.foreground": "#64727f",
+    "sideBar.foreground": "#9da5b4",
     "sideBarSectionHeader.foreground": "#c0c5cd",
-    "tab.border": "#1c1f26",
-    "tab.activeBackground": "#2b303b",
-    "tab.inactiveBackground": "#1c1f26",
-    "titleBar.activeBackground": "#1c1f26",
-    "titleBar.inactiveBackground": "#1c1f26",
-    "widget.shadow": "#2b303b",
+    "tab.border": "#0f1e28",
+    "tab.activeBackground": "#1a2a32",
+    "tab.inactiveBackground": "#0f1e28",
+    "titleBar.activeBackground": "#0f1e28",
+    "titleBar.inactiveBackground": "#0f1e28",
+    "widget.shadow": "#1a2a32",
     "pickerGroup.foreground": "#c0c5cd",
     "pickerGroup.border": "#343d46",
     "focusBorder": "#343d46",
@@ -106,13 +107,13 @@
     "editorLink.activeForeground": "#64727f",
     "peekView.border": "#343d46",
     "peekViewEditor.matchHighlightBorder": "#343d46",
-    "peekViewTitle.background": "#1c1f26",
-    "peekViewTitleDescription.foreground": "#d4d4d4",
-    "peekViewTitleLabel.foreground": "#d4d4d4",
+    "peekViewTitle.background": "#0f1e28",
+    "peekViewTitleDescription.foreground": "#ced4de",
+    "peekViewTitleLabel.foreground": "#ced4de",
     "notifications.background": "#282c35",
-    "notifications.foreground": "#d4d4d4",
-    "notificationCenterHeader.foreground": "#d4d4d4",
-    "extensionButton.prominentForeground": "#d4d4d4",
+    "notifications.foreground": "#ced4de",
+    "notificationCenterHeader.foreground": "#ced4de",
+    "extensionButton.prominentForeground": "#ced4de",
     "extensionButton.prominentBackground": "#343d46",
     "extensionButton.prominentHoverBackground": "#64727f",
     "editorUnnecessary.foreground": "#7F7F7F",
@@ -126,10 +127,184 @@
     "editorOverviewRuler.warningForeground": "#cd9731",
     "editorOverviewRuler.infoForeground": "#6796e6",
     "editorOverviewRuler.bracketMatchForeground": "#343d46",
-    "breadcrumb.foreground": "#d4d4d4",
+    "breadcrumb.foreground": "#ced4de",
     "breadcrumb.focusForeground": "#dfe1e8",
     "breadcrumb.activeSelectionForeground": "#E15A60",
-    "breadcrumbPicker.background": "#1c1f26"
+    "breadcrumbPicker.background": "#0f1e28"
   },
-  "tokenColors": []
+  "tokenColors": [
+    {
+      "settings": {
+        "foreground": "#66747f"
+      },
+      "name": "Comments",
+      "scope": "comment, punctuation.definition.comment"
+    },
+    {
+      "name": "Block & Braces",
+      "scope": [
+        "keyword.operator.type.annotation",
+        "meta.brace.round",
+        "punctuation",
+        "keyword.operator.ternary",
+        "meta.brace.curly.graphql",
+        "meta.brace.square"
+      ],
+      "settings": {
+        "foreground": "#808e99"
+      }
+    },
+    {
+      "name": "Inserted",
+      "scope": "markup.inserted",
+      "settings": {
+        "foreground": "#99C794"
+      }
+    },
+    {
+      "name": "Deleted",
+      "scope": "markup.deleted",
+      "settings": {
+        "foreground": "#E15A60"
+      }
+    },
+    {
+      "name": "Changed",
+      "scope": "markup.changed",
+      "settings": {
+        "foreground": "#BB80B3"
+      }
+    },
+    {
+      "name": "URL",
+      "scope": "*url*, *link*, *uri*",
+      "settings": {
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Search Results Nums",
+      "scope": "constant.numeric.line-number.find-in-files - match",
+      "settings": {
+        "foreground": "#AB7967"
+      }
+    },
+    {
+      "name": "Search Results Lines",
+      "scope": "entity.name.filename.find-in-files",
+      "settings": {
+        "foreground": "#99C794"
+      }
+    },
+    {
+      "scope": "token.info-token",
+      "settings": {
+        "foreground": "#6796e6"
+      }
+    },
+    {
+      "scope": "token.warn-token",
+      "settings": {
+        "foreground": "#cd9731"
+      }
+    },
+    {
+      "scope": "token.error-token",
+      "settings": {
+        "foreground": "#f44747"
+      }
+    },
+    {
+      "scope": "token.debug-token",
+      "settings": {
+        "foreground": "#b267e6"
+      }
+    },
+    {
+      "name": "Italic font style",
+      "scope": [
+        "entity.name.tag.doctype",
+        "meta.tag.sgml.doctype",
+        "meta.tag.sgml.doctype.html",
+        "markup.italic.markdown",
+        "markup.quote.markdown",
+        "support.type.primitive",
+        "entity.other.attribute-name",
+        "entity.name.tag.custom",
+        "source.js entity.other.attribute-name.js",
+        "source.js.jsx entity.other.attribute-name.js",
+        "ext.html.basic entity.other.attribute-name.html",
+        "source.js.jsx keyword.control.flow.js",
+        "support.type.property.css",
+        "support.function.basic_functions",
+        "variable.assignment.coffee",
+        "support.function.basic_functions",
+        "keyword.operator.type.annotation",
+        "assignment.coffee",
+        "italic",
+        "quote",
+        "type .function",
+        "type.function",
+        "storage.modifier.js",
+        "storage.modifier.js.jsx",
+        "storage.modifier.ts",
+        "storage.modifier.tsx",
+        "storage.modifier.php",
+        "storage.type.class",
+        "modifier",
+        "keyword.control.flow",
+        "source.shell keyword.control.shell",
+        "keyword.control.default",
+        "keyword.control.switch",
+        "this",
+        "support.type.builtin",
+        "variable.language.this.php"
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Normal font style",
+      "scope": [
+        "meta.interface.ts variable.object.property",
+        "meta.interface.tsx variable.object.property",
+        "meta.type.declaration.ts variable.object.property",
+        "meta.type.declaration.tsx variable.object.property",
+        "meta.function.parameter.typehinted.php storage.type.php",
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end",
+        "source.js meta.group.braces.curly.js keyword.other.substitution",
+        "source.js.jsx meta.group.braces.curly.js.jsx keyword.other.substitution",
+        "keyword.operator.type.annotation",
+        "keyword.operator.type",
+        "keyword.operator.logical",
+        "source.php keyword.operator",
+        "variable.object.property.ts",
+        "variable.object.property.tsx",
+        "keyword.operator.class.php",
+        "support.function.basic_functions.php",
+        "keyword.operator.flowtype.other.js",
+        "keyword.operator.flowtype.other.js.jsx",
+        "source.shell keyword.operator",
+        "keyword.operator.ternary.js",
+        "keyword.operator.ternary.js.jsx",
+        "keyword.operator.ternary.ts",
+        "keyword.operator.ternary.tsx",
+        "source.js meta.group.regexp keyword.operator",
+        "source.js.jsx meta.group.regexp keyword.operator",
+        "source.ts meta.group.regexp keyword.operator",
+        "source.tsx meta.group.regexp keyword.operator",
+        "string.regexp.js keyword.control.anchor.regexp",
+        "string.regexp.js.jsx keyword.control.anchor.regexp",
+        "string.regexp.ts keyword.control.anchor.regexp",
+        "string.regexp.tsx keyword.control.anchor.regexp",
+        "keyword.operator.other.elixir",
+        "keyword.operator.assignment.go"
+      ],
+      "settings": {
+        "fontStyle": "normal"
+      }
+    }
+  ]
 }
