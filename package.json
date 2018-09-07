@@ -1,0 +1,37 @@
+{
+  "name": "shuriken",
+  "displayName": "Shuriken",
+  "description": "手裏剣 Shuriken is an opinionated theme inspired by spacegray",
+  "license": "MIT",
+  "version": "0.1.0",
+  "publisher": "TobiasTimm",
+  "preview": false,
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "keywords": [
+    "theme",
+    "spacegray",
+    "ninja",
+    "dark"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobiastimm/shuriken.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tobiastimm/shuriken/issues"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Shuriken",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shuriken.json"
+      }
+    ]
+  }
+}
