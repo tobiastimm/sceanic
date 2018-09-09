@@ -286,13 +286,13 @@
       }
     },
     {
-      "scope": ["entity.name"],
+      "scope": ["entity.name", "entity.name.type.class"],
       "settings": {
         "foreground": "#fac761"
       }
     },
     {
-      "scope": ["entity.name.function"],
+      "scope": ["entity.name.function", "entity.name.type"],
       "settings": {
         "foreground": "#6699cc"
       }
@@ -306,12 +306,11 @@
     {
       "scope": ["entity.other.inherited-class"],
       "settings": {
-        "foreground": "#99c794",
-        "fontStyle": "italic"
+        "foreground": "#ced4deff"
       }
     },
     {
-      "scope": ["entity.name.tag"],
+      "scope": ["entity.name.tag", "support.class.component"],
       "settings": {
         "foreground": "#ec5f66"
       }
@@ -644,9 +643,16 @@
       }
     },
     {
-      "scope": ["keyword.control.default"],
+      "scope": ["keyword.control.default", "storage.modifier"],
       "settings": {
-        "foreground": "#c695c6"
+        "foreground": "#c695c6",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["meta.object-literal.key"],
+      "settings": {
+        "foreground": "#99c794"
       }
     },
     // {
@@ -806,7 +812,11 @@
         "keyword.control.default",
         "keyword.control.switch",
         "this",
-        "variable.language.this.php"
+        "variable.language.this.php",
+        "keyword.control.import",
+        "keyword.control.from",
+        "keyword.control.export",
+        "keyword.control.as"
       ],
       "settings": {
         "fontStyle": "italic"
@@ -849,7 +859,8 @@
         "string.regexp.tsx keyword.control.anchor.regexp",
         "keyword.operator.other.elixir",
         "keyword.operator.assignment.go",
-        "support.type.builtin"
+        "support.type.builtin",
+        "support.class.component"
       ],
       "settings": {
         "fontStyle": "normal"
