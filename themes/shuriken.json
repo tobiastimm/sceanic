@@ -4,9 +4,9 @@
   "maintainers": ["Tobias Timm <tbs.timm@gmail.com>"],
   "type": "dark",
   "colors": {
-    "activityBar.background": "#2F333D",
-    "activityBar.foreground": "#D7DAE0",
-    "activityBarBadge.background": "#ec5f66",
+    "activityBar.background": "#16232a",
+    "activityBar.foreground": "#65737f",
+    "activityBarBadge.background": "#6699CC",
     "activityBarBadge.foreground": "#F8FAFD",
     "badge.background": "#282c34",
     "button.background": "#404754",
