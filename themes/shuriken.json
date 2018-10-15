@@ -216,7 +216,10 @@
       }
     },
     {
-      "scope": ["variable.parameter"],
+      "scope": [
+        "variable.parameter",
+        "meta.selectionset.graphql meta.arguments.graphql variable.graphql"
+      ],
       "settings": {
         "foreground": "#ced4de"
       }
@@ -229,7 +232,11 @@
       }
     },
     {
-      "scope": ["variable.function"],
+      "scope": [
+        "variable.function",
+        "meta.selectionset.graphql variable.graphql",
+        "meta.type.interface.graphql meta.type.object.graphql variable.graphql"
+      ],
       "settings": {
         "foreground": "#6699cc"
       }
@@ -316,6 +323,12 @@
       }
     },
     {
+      "scope": ["entity.name.tag support.class.component"],
+      "settings": {
+        "foreground": "#fac761"
+      }
+    },
+    {
       "scope": ["entity.other.attribute-name"],
       "settings": {
         "foreground": "#c695c6",
@@ -351,7 +364,7 @@
       }
     },
     {
-      "scope": ["support.type.primitive"],
+      "scope": ["support.type.primitive", "support.type.builtin.graphql"],
       "settings": {
         "foreground": "#c695c6",
         "fontStyle": "normal"
@@ -540,7 +553,23 @@
     },
     {
       "scope": [
+        "meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
+      ],
+      "settings": {
+        "foreground": "#c695c6"
+      }
+    },
+    {
+      "scope": [
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#fac761"
+      }
+    },
+    {
+      "scope": [
+        "meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
       ],
       "settings": {
         "foreground": "#fac761"
@@ -557,7 +586,23 @@
     },
     {
       "scope": [
+        "meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
+      ],
+      "settings": {
+        "foreground": "#6699cc"
+      }
+    },
+    {
+      "scope": [
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#f99058"
+      }
+    },
+    {
+      "scope": [
+        "meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
       ],
       "settings": {
         "foreground": "#f99058"
@@ -573,7 +618,23 @@
     },
     {
       "scope": [
+        "meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
+      ],
+      "settings": {
+        "foreground": "#ec5f66"
+      }
+    },
+    {
+      "scope": [
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#c695c6"
+      }
+    },
+    {
+      "scope": [
+        "meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
       ],
       "settings": {
         "foreground": "#c695c6"
@@ -589,7 +650,23 @@
     },
     {
       "scope": [
+        "meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
+      ],
+      "settings": {
+        "foreground": "#fac761"
+      }
+    },
+    {
+      "scope": [
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#6699cc"
+      }
+    },
+    {
+      "scope": [
+        "meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
       ],
       "settings": {
         "foreground": "#6699cc"
@@ -605,7 +682,23 @@
     },
     {
       "scope": [
+        "meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
+      ],
+      "settings": {
+        "foreground": "#f99058"
+      }
+    },
+    {
+      "scope": [
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#99c794"
+      }
+    },
+    {
+      "scope": [
+        "meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
       ],
       "settings": {
         "foreground": "#99c794"
@@ -619,6 +712,8 @@
         "meta.type.declaration meta.object.type meta.field.declaration meta.definition.property entity.name.function",
         "entity.name.type.alias",
         "entity.name.type.interface",
+        "source.graphql meta.type.interface.graphql support.type.graphql",
+        "meta.enum.graphql support.type.enum.graphql",
         "support.type.builtin"
       ],
       "settings": {
@@ -650,7 +745,12 @@
       }
     },
     {
-      "scope": ["meta.object-literal.key"],
+      "scope": [
+        "meta.object-literal.key",
+        "meta.selectionset.graphql meta.arguments.graphql variable.parameter.graphql",
+        "meta.type.interface.graphql meta.type.object.graphql meta.variables.graphql variable.parameter.graphql",
+        "meta.enum.graphql meta.type.object.graphql constant.character.enum.graphql"
+      ],
       "settings": {
         "foreground": "#99c794"
       }
@@ -711,7 +811,9 @@
         "punctuation.definition",
         "keyword.operator.ternary",
         "meta.brace.curly.graphql",
-        "meta.brace.square"
+        "meta.brace.square",
+        "punctuation.operation.graphql",
+        "punctuation.colon.graphql"
       ],
       "settings": {
         "foreground": "#808e99"
@@ -816,7 +918,8 @@
         "keyword.control.import",
         "keyword.control.from",
         "keyword.control.export",
-        "keyword.control.as"
+        "keyword.control.as",
+        "keyword.control"
       ],
       "settings": {
         "fontStyle": "italic"
@@ -860,7 +963,9 @@
         "keyword.operator.other.elixir",
         "keyword.operator.assignment.go",
         "support.type.builtin",
-        "support.class.component"
+        "support.class.component",
+        "source.graphql meta.type.interface.graphql support.type.graphql",
+        "meta.enum.graphql support.type.enum.graphql"
       ],
       "settings": {
         "fontStyle": "normal"
