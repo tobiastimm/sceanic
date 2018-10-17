@@ -218,7 +218,8 @@
     {
       "scope": [
         "variable.parameter",
-        "meta.selectionset.graphql meta.arguments.graphql variable.graphql"
+        "meta.selectionset.graphql meta.arguments.graphql variable.graphql",
+        "meta.type.interface.graphql meta.type.object.graphql support.type.graphql"
       ],
       "settings": {
         "foreground": "#ced4de"
@@ -293,7 +294,12 @@
       }
     },
     {
-      "scope": ["entity.name", "entity.name.type.class"],
+      "scope": [
+        "entity.name",
+        "entity.name.type.class",
+        "meta.type.interface.graphql support.type.graphql",
+        "meta.enum.graphql support.type.enum.graphql"
+      ],
       "settings": {
         "foreground": "#fac761"
       }
@@ -712,8 +718,6 @@
         "meta.type.declaration meta.object.type meta.field.declaration meta.definition.property entity.name.function",
         "entity.name.type.alias",
         "entity.name.type.interface",
-        "source.graphql meta.type.interface.graphql support.type.graphql",
-        "meta.enum.graphql support.type.enum.graphql",
         "support.type.builtin"
       ],
       "settings": {
@@ -964,7 +968,8 @@
         "keyword.operator.assignment.go",
         "support.type.builtin",
         "support.class.component",
-        "source.graphql meta.type.interface.graphql support.type.graphql",
+        "meta.type.interface.graphql support.type.graphql",
+        "meta.type.interface.graphql meta.type.object.graphql support.type.graphql",
         "meta.enum.graphql support.type.enum.graphql"
       ],
       "settings": {

@@ -1,3 +1,7 @@
+## 0.2.1
+
+- Fix some colors in graphql
+
 ## 0.2.0
 
 - GraphQL support
