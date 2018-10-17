@@ -287,7 +287,8 @@
         "meta.interface meta.field.declaration meta.type.annotation keyword.operator.type.annotation",
         "meta.type.declaration meta.object.type meta.field.declaration meta.type.annotation keyword.operator.type.annotation",
         "meta.interface meta.method.declaration meta.return.type keyword.operator.type.annotation",
-        "meta.type.declaration meta.object.type meta.method.declaration meta.return.type keyword.operator.type.annotation"
+        "meta.type.declaration meta.object.type meta.method.declaration meta.return.type keyword.operator.type.annotation",
+        "punctuation.accessor"
       ],
       "settings": {
         "foreground": "#fab05c"
@@ -342,6 +343,13 @@
       }
     },
     {
+      "scope": ["support.variable"],
+      "settings": {
+        "foreground": "#6699cc",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "scope": ["support.function"],
       "settings": {
         "foreground": "#6699cc",
@@ -381,6 +389,17 @@
       "settings": {
         "foreground": "#6699cc",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.string.template.begin",
+        "punctuation.definition.string.template.end",
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end"
+      ],
+      "settings": {
+        "foreground": "#c695c6"
       }
     },
     {
@@ -880,6 +899,12 @@
       "scope": "token.debug-token",
       "settings": {
         "foreground": "#b267e6"
+      }
+    },
+    {
+      "scope": "meta.template.expression",
+      "settings": {
+        "foreground": "#ced4de"
       }
     },
     {

@@ -1,3 +1,8 @@
+## 0.2.2
+
+- Small color improvements in template strings
+- Color corrections for punctuation
+
 ## 0.2.1
 
 - Fix some colors in graphql
