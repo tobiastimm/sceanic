@@ -1,3 +1,11 @@
+## 0.3.0
+
+- Add Java support
+- Add more demo files
+- Fix some backticks styling
+- Remove colors for `entity.name.type.module`
+- Remove styling for `support.variable.property.dom`
+
 ## 0.2.2
 
 - Small color improvements in template strings

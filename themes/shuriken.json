@@ -219,7 +219,9 @@
       "scope": [
         "variable.parameter",
         "meta.selectionset.graphql meta.arguments.graphql variable.graphql",
-        "meta.type.interface.graphql meta.type.object.graphql support.type.graphql"
+        "meta.type.interface.graphql meta.type.object.graphql support.type.graphql",
+        "support.variable.property.dom",
+        "entity.name.type.module"
       ],
       "settings": {
         "foreground": "#ced4de"
@@ -267,16 +269,9 @@
       }
     },
     {
-      "scope": ["storage.type"],
+      "scope": ["storage.type", "storage.type.type"],
       "settings": {
         "foreground": "#c695c6",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": ["storage.type.type"],
-      "settings": {
-        "foreground": "#6699cc",
         "fontStyle": "italic"
       }
     },
@@ -288,7 +283,8 @@
         "meta.type.declaration meta.object.type meta.field.declaration meta.type.annotation keyword.operator.type.annotation",
         "meta.interface meta.method.declaration meta.return.type keyword.operator.type.annotation",
         "meta.type.declaration meta.object.type meta.method.declaration meta.return.type keyword.operator.type.annotation",
-        "punctuation.accessor"
+        "punctuation.accessor",
+        "punctuation.separator.period"
       ],
       "settings": {
         "foreground": "#fab05c"
@@ -378,7 +374,11 @@
       }
     },
     {
-      "scope": ["support.type.primitive", "support.type.builtin.graphql"],
+      "scope": [
+        "support.type.primitive",
+        "support.type.builtin.graphql",
+        "support.type.builtin"
+      ],
       "settings": {
         "foreground": "#c695c6",
         "fontStyle": "normal"
@@ -393,6 +393,8 @@
     },
     {
       "scope": [
+        "meta.var.expr punctuation.definition.string.template.begin string.template",
+        "meta.var.expr punctuation.definition.string.template.end string.template",
         "punctuation.definition.string.template.begin",
         "punctuation.definition.string.template.end",
         "punctuation.definition.template-expression.begin",
@@ -737,7 +739,7 @@
         "meta.type.declaration meta.object.type meta.field.declaration meta.definition.property entity.name.function",
         "entity.name.type.alias",
         "entity.name.type.interface",
-        "support.type.builtin"
+        "storage.modifier.import"
       ],
       "settings": {
         "foreground": "#ced4deff"
@@ -754,16 +756,26 @@
         "keyword.operator.ternary.js",
         "keyword.operator.ternary.js.jsx",
         "keyword.operator.ternary.ts",
-        "keyword.operator.ternary.tsx"
+        "keyword.operator.ternary.tsx",
+        "keyword.control.new",
+        "variable.language.wildcard",
+        "keyword.other.import"
       ],
       "settings": {
         "foreground": "#fab05c"
       }
     },
     {
-      "scope": ["keyword.control.default", "storage.modifier"],
+      "scope": ["keyword.control.default"],
       "settings": {
         "foreground": "#c695c6",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["storage.modifier"],
+      "settings": {
+        "foreground": "#ec5f66",
         "fontStyle": "italic"
       }
     },
@@ -778,58 +790,9 @@
         "foreground": "#99c794"
       }
     },
-    // {
-    //   "scope": ["brackethighlighter.default"],
-    //   "settings": {
-    //     "foreground": "#ced4de"
-    //   }
-    // },
-    // {
-    //   "scope": ["brackethighlighter.unmatched"],
-    //   "settings": {
-    //     "foreground": "#ec5f66"
-    //   }
-    // },
-    // {
-    //   "scope": ["brackethighlighter.quote"],
-    //   "settings": {
-    //     "foreground": "#99c794"
-    //   }
-    // },
-    // {
-    //   "scope": ["brackethighlighter.curly"],
-    //   "settings": {
-    //     "foreground": "#c695c6"
-    //   }
-    // },
-    // {
-    //   "scope": ["brackethighlighter.round"],
-    //   "settings": {
-    //     "foreground": "#fac761"
-    //   }
-    // },
-    // {
-    //   "scope": ["brackethighlighter.square"],
-    //   "settings": {
-    //     "foreground": "#6699cc"
-    //   }
-    // },
-    // {
-    //   "scope": ["brackethighlighter.angle"],
-    //   "settings": {
-    //     "foreground": "#f99058"
-    //   }
-    // },
-    // {
-    //   "scope": ["brackethighlighter.tag"],
-    //   "settings": {
-    //     "foreground": "#99c794"
-    //   }
-    // },
     {
       "name": "Block & Braces",
       "scope": [
-        "keyword.operator.type.annotation",
         "meta.brace.round",
         "punctuation.definition",
         "keyword.operator.ternary",
@@ -908,6 +871,19 @@
       }
     },
     {
+      "scope": ["meta.class.identifier storage.modifier"],
+      "settings": {
+        "foreground": "#c695c6",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["storage.type.generic"],
+      "settings": {
+        "foreground": "#6796e6"
+      }
+    },
+    {
       "name": "Italic font style",
       "scope": [
         "entity.name.tag.doctype",
@@ -931,11 +907,7 @@
         "quote",
         "type .function",
         "type.function",
-        "storage.modifier.js",
-        "storage.modifier.js.jsx",
-        "storage.modifier.ts",
-        "storage.modifier.tsx",
-        "storage.modifier.php",
+        "storage.modifier",
         "storage.type.class",
         "modifier",
         "keyword.control.flow",
@@ -948,7 +920,8 @@
         "keyword.control.from",
         "keyword.control.export",
         "keyword.control.as",
-        "keyword.control"
+        "keyword.control",
+        "keyword.other.import"
       ],
       "settings": {
         "fontStyle": "italic"
@@ -995,7 +968,14 @@
         "support.class.component",
         "meta.type.interface.graphql support.type.graphql",
         "meta.type.interface.graphql meta.type.object.graphql support.type.graphql",
-        "meta.enum.graphql support.type.enum.graphql"
+        "meta.enum.graphql support.type.enum.graphql",
+        "support.variable.property.dom",
+        "storage.type.primitive.java",
+        "storage.type.object.java",
+        "storage.type.object.array.java",
+        "storage.type.java",
+        "storage.type.generic.java",
+        "storage.modifier.import.java"
       ],
       "settings": {
         "fontStyle": "normal"
