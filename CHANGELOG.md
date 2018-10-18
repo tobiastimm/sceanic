@@ -1,3 +1,7 @@
+## 0.3.1
+
+- Revert color for `async` keyword
+
 ## 0.3.0
 
 - Add Java support

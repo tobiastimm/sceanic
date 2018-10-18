@@ -766,7 +766,7 @@
       }
     },
     {
-      "scope": ["keyword.control.default"],
+      "scope": ["keyword.control.default", "storage.modifier.async"],
       "settings": {
         "foreground": "#c695c6",
         "fontStyle": "italic"
