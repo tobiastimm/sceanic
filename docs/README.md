@@ -3,7 +3,7 @@
 [![Version](https://vsmarketplacebadge.apphb.com/version/TobiasTimm.shuriken.svg)](https://marketplace.visualstudio.com/items?itemName=TobiasTimm.shuriken)
 [![Downloads](https://img.shields.io/vscode-marketplace/d/TobiasTimm.shuriken.svg)](https://marketplace.visualstudio.com/items?itemName=TobiasTimm.shuriken)
 
-> What happens when Spacegray meets Oceanic Next?
+> What if Spacegray meets Oceanic Next?
 
 [**Sceanic**](https://tobiastimm.github.io/sceanic/) is a vscode theme combining the best parts of spacegray and oceanic next with some personal finishes. Heavily inspired by the great DA CS themes for sublime, I've ported my favorite to vscode.
 
