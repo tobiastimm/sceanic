@@ -1,9 +1,11 @@
-# 手裏剣 Shuriken
+# Sceanic
 
 [![Version](https://vsmarketplacebadge.apphb.com/version/TobiasTimm.shuriken.svg)](https://marketplace.visualstudio.com/items?itemName=TobiasTimm.shuriken)
 [![Downloads](https://img.shields.io/vscode-marketplace/d/TobiasTimm.shuriken.svg)](https://marketplace.visualstudio.com/items?itemName=TobiasTimm.shuriken)
 
-[**手裏剣 Shuriken**](https://tobiastimm.github.io/shuriken/) is an opinionated vscode theme inspired by spacegray and oceanic next.
+> What if Spacegray meets Oceanic Next?
+
+[**Sceanic**](https://tobiastimm.github.io/sceanic/) is a vscode theme combining the best parts of spacegray and oceanic next with some personal finishes. Heavily inspired by the great DA CS themes for sublime, I've ported my favorite to vscode.
 
 ![Screenshot](screenshot.png)
 
@@ -16,10 +18,14 @@ Select the theme and you are ready to go!
 ## Installation
 
 1.  Open Extensions sidebar panel in VS Code. View → Extensions
-1.  Search for `Shuriken`
+1.  Search for `Sceanic`
 1.  Click Install
 1.  Click Reload
-1.  File > Preferences > Color Theme > Shuriken
+1.  File > Preferences > Color Theme > Sceanic
+
+## Recommended Settings
+
+To enjoy the full oceanic expirience I recommend to install the [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme) and set the file icon theme to `Material Theme Icons Ocean`.
 
 ## Feedback / Issues
 

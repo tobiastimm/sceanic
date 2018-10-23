@@ -1,5 +1,5 @@
 {
-  "name": "Shuriken",
+  "name": "Sceanic",
   "author": "Tobias Timm",
   "maintainers": ["Tobias Timm <tbs.timm@gmail.com>"],
   "type": "dark",
@@ -221,7 +221,9 @@
         "meta.selectionset.graphql meta.arguments.graphql variable.graphql",
         "meta.type.interface.graphql meta.type.object.graphql support.type.graphql",
         "support.variable.property.dom",
-        "entity.name.type.module"
+        "entity.name.type.module",
+        "meta.variables.graphql meta.type.list.graphql support.type.graphql",
+        "entity.name.function.directive.graphql"
       ],
       "settings": {
         "foreground": "#ced4de"
@@ -583,7 +585,7 @@
         "meta.selectionset.graphql meta.selectionset.graphql variable.graphql"
       ],
       "settings": {
-        "foreground": "#c695c6"
+        "foreground": "#99c794"
       }
     },
     {
@@ -975,7 +977,8 @@
         "storage.type.object.array.java",
         "storage.type.java",
         "storage.type.generic.java",
-        "storage.modifier.import.java"
+        "storage.modifier.import.java",
+        "meta.variables.graphql meta.type.list.graphql support.type.graphql"
       ],
       "settings": {
         "fontStyle": "normal"

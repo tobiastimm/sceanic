@@ -1,9 +1,9 @@
 {
-  "name": "shuriken",
-  "displayName": "Shuriken",
-  "description": "手裏剣 Shuriken is an opinionated vscode theme inspired by spacegray and oceanic next",
+  "name": "sceanic",
+  "displayName": "Sceanic",
+  "description": "Spacegray meets oceanic",
   "license": "MIT",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "publisher": "TobiasTimm",
   "preview": false,
   "engines": {
@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tobiastimm/shuriken.git"
+    "url": "https://github.com/tobiastimm/sceanic.git"
   },
   "bugs": {
-    "url": "https://github.com/tobiastimm/shuriken/issues"
+    "url": "https://github.com/tobiastimm/sceanic/issues"
   },
   "categories": [
     "Themes"
@@ -28,9 +28,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Shuriken",
+        "label": "Sceanic",
         "uiTheme": "vs-dark",
-        "path": "./themes/shuriken.json"
+        "path": "./themes/sceanic.json"
       }
     ]
   }
