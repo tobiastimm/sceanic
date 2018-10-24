@@ -71,7 +71,7 @@ const Header = ({ siteTitle }) => (
           <span className="comment">c</span>
         </h1>
       </div>
-      <p>What happens when Spacegray meets Oceanic Next?</p>
+      <h3>What happens when Spacegray meets Oceanic Next?</h3>
     </div>
   </StyledHeader>
 )

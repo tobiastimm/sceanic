@@ -12,6 +12,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: #1a2a32;
     color: #ced4de;
   }
+  html, body, #___gatsby, #___gatsby>div {
+    height: 100%
+  }
 `
 
 const Content = styled.main`
@@ -20,6 +23,7 @@ const Content = styled.main`
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
   text-align: center;
+  height: inherit;
 `
 
 const Layout = ({ children }) => (
