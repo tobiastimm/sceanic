@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/sceanic',
   siteMetadata: {
     title: 'Sceanic - 🚀 Spacegray meets 🌊 Oceanic',
   },
