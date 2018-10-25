@@ -140,7 +140,7 @@ const IndexPage = () => (
             </div>
             <a
               className="download-btn"
-              href="https://marketplace.visualstudio.com/items?itemName=tobiastimm.raiju"
+              href="https://marketplace.visualstudio.com/items?itemName=tobiastimm.sceanic"
             >
               Download
             </a>
