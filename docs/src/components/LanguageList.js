@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import {
   mdiJson,
   mdiSass,
@@ -13,6 +14,18 @@ import {
   mdiGraphql,
 } from '@mdi/js'
 import Language from './Language'
+
+export const query = graphql`
+  query {
+    react: file(relativePath: { eq: "images/react.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const languages = [
   {
@@ -85,7 +98,7 @@ const StyledList = styled.ul`
   background: #16232a;
 `
 
-const Screen = styled.img`
+const Screen = styled(Img)`
   padding: 0;
   margin: 0;
 `
