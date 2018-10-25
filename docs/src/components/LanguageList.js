@@ -18,38 +18,47 @@ const languages = [
   {
     path: mdiReact,
     screen: require('../images/react.png'),
+    alt: 'react',
   },
   {
     path: mdiGraphql,
     screen: require('../images/graphql.png'),
+    alt: 'graphql',
   },
   {
     path: mdiLanguageJavascript,
-    screen: require('../images/screenshot.png'),
+    screen: require('../images/js.png'),
+    alt: 'js',
   },
   {
     path: mdiLanguageTypescript,
-    screen: require('../images/screenshot.png'),
+    screen: require('../images/ts.png'),
+    alt: 'ts',
   },
   {
     path: mdiLanguageHtml5,
-    screen: require('../images/screenshot.png'),
+    screen: require('../images/html.png'),
+    alt: 'html',
   },
   {
     path: mdiLanguageCss3,
-    screen: require('../images/screenshot.png'),
+    screen: require('../images/css.png'),
+    alt: 'css',
   },
   {
     path: mdiSass,
-    screen: require('../images/screenshot.png'),
+    screen: require('../images/scss.png'),
+    alt: 'scss',
   },
   {
     path: mdiJson,
-    screen: require('../images/screenshot.png'),
+    screen: require('../images/json.png'),
+    alt: 'json',
   },
   {
     path: mdiLanguageJava,
-    screen: require('../images/screenshot.png'),
+    screen: require('../images/java.png'),
+    alt: 'java',
   },
 ]
 const Wrapper = styled.div`
@@ -125,7 +134,7 @@ class LanguageList extends Component {
           </StyledList>
           <Screen
             src={this.state.languages[this.state.activeLanguage].screen}
-            alt="test"
+            alt={this.state.languages[this.state.activeLanguage].alt}
           />
           <StatusBar>
             <p>

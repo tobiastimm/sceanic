@@ -16,6 +16,7 @@ const Element = styled.li`
   }
   &:hover svg path {
     fill: #65737f;
+    transition: fill 0.2s ease-out;
   }
 `
 

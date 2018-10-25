@@ -29,7 +29,7 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      <a href="https://github.com/tobiastimm/">
+      <a href="https://github.com/tobiastimm/sceanic">
         Made with ❤️️ by <span className="highlight">Tobias Timm</span> -
         Copyright 2018
       </a>
