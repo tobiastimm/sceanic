@@ -11,7 +11,6 @@ import {
   mdiLanguageJavascript,
   mdiLanguageTypescript,
   mdiGraphql,
-  mdiVisualStudioCode,
 } from '@mdi/js'
 import Language from './Language'
 
@@ -22,7 +21,7 @@ const languages = [
   },
   {
     path: mdiGraphql,
-    screen: require('../images/screenshot.png'),
+    screen: require('../images/graphql.png'),
   },
   {
     path: mdiLanguageJavascript,
@@ -61,7 +60,8 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 80px minmax(500px, 1000px);
+  grid-template-columns: 3.75rem minmax(500px, 1000px);
+  grid-template-rows: 1fr 22px;
   margin-bottom: 4rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 `
@@ -71,14 +71,32 @@ const StyledList = styled.ul`
   display: grid;
   margin: 0;
   width: 100%;
-  padding: 10px 0;
-  grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+  padding: 0.625rem 0;
+  grid-template-rows: repeat(auto-fill, minmax(3.125rem, 1fr));
   background: #16232a;
 `
 
 const Screen = styled.img`
   padding: 0;
   margin: 0;
+`
+
+const StatusBar = styled.div`
+  background: #0f1e28;
+  color: #4f5b66;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  p {
+    margin: 0;
+    padding: 0 0.625rem;
+    font-size: 0.75rem;
+  }
+  a {
+    color: #4f5b66;
+    text-decoration: none;
+  }
 `
 
 class LanguageList extends Component {
@@ -109,6 +127,11 @@ class LanguageList extends Component {
             src={this.state.languages[this.state.activeLanguage].screen}
             alt="test"
           />
+          <StatusBar>
+            <p>
+              Font: <a href="https://dank.sh">Dank Mono</a>
+            </p>
+          </StatusBar>
         </Container>
       </Wrapper>
     )
