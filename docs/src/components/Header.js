@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
+import Helmet from 'react-helmet'
 
 const StyledHeader = styled.header`
   display: flex;
@@ -59,6 +59,21 @@ const StyledHeader = styled.header`
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
+    <Helmet
+      title={siteTitle}
+      meta={[
+        {
+          name: 'description',
+          content:
+            ' Sceanic is a Visual Studio Code theme combining the best parts of 🚀 Spacegray and 🌊 Oceanic Next with some personal finishes 💅.',
+        },
+        {
+          name: 'keywords',
+          content:
+            'vscode, theme, sceanic, oceanic next, sublime, dark, extension, spacegray',
+        },
+      ]}
+    />
     <div className="title">
       <div className="flex-centered">
         <h1>
