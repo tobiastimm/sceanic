@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import {
   mdiJson,
@@ -13,64 +12,45 @@ import {
   mdiLanguageTypescript,
   mdiGraphql,
 } from '@mdi/js'
-import Language from './Language'
+import { Transition, config } from 'react-spring'
 
-export const query = graphql`
-  query {
-    react: file(relativePath: { eq: "images/react.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+import Language from './Language'
 
 const languages = [
   {
     path: mdiReact,
-    screen: require('../images/react.png'),
     alt: 'react',
   },
   {
     path: mdiGraphql,
-    screen: require('../images/graphql.png'),
     alt: 'graphql',
   },
   {
     path: mdiLanguageJavascript,
-    screen: require('../images/js.png'),
     alt: 'js',
   },
   {
     path: mdiLanguageTypescript,
-    screen: require('../images/ts.png'),
     alt: 'ts',
   },
   {
     path: mdiLanguageHtml5,
-    screen: require('../images/html.png'),
     alt: 'html',
   },
   {
     path: mdiLanguageCss3,
-    screen: require('../images/css.png'),
     alt: 'css',
   },
   {
     path: mdiSass,
-    screen: require('../images/scss.png'),
     alt: 'scss',
   },
   {
     path: mdiJson,
-    screen: require('../images/json.png'),
     alt: 'json',
   },
   {
     path: mdiLanguageJava,
-    screen: require('../images/java.png'),
     alt: 'java',
   },
 ]
@@ -98,11 +78,6 @@ const StyledList = styled.ul`
   background: #16232a;
 `
 
-const Screen = styled(Img)`
-  padding: 0;
-  margin: 0;
-`
-
 const StatusBar = styled.div`
   background: #0f1e28;
   color: #4f5b66;
@@ -121,14 +96,35 @@ const StatusBar = styled.div`
   }
 `
 
+function findImage(name, images) {
+  const image = images.find(({ node: { fluid } }) =>
+    fluid.originalName.includes(name)
+  )
+  if (image) {
+    return image.node.fluid
+  }
+  return ''
+}
+
 class LanguageList extends Component {
   state = {
     languages: languages,
     activeLanguage: 0,
+    activeImage: {
+      alt: languages[0].alt,
+      src: findImage(languages[0].alt, this.props.images),
+    },
   }
 
   handleClick = index => {
-    this.setState({ activeLanguage: index })
+    this.setState({ activeImage: null })
+    this.setState(prevState => ({
+      activeLanguage: index,
+      activeImage: {
+        alt: languages[index].alt,
+        src: findImage(languages[index].alt, this.props.images),
+      },
+    }))
   }
 
   render() {
@@ -145,10 +141,25 @@ class LanguageList extends Component {
               />
             ))}
           </StyledList>
-          <Screen
-            src={this.state.languages[this.state.activeLanguage].screen}
-            alt={this.state.languages[this.state.activeLanguage].alt}
-          />
+          <Transition
+            items={this.state.activeImage}
+            keys={item => item.alt}
+            from={{ opacity: 0 }}
+            enter={{ opacity: 1 }}
+            leave={{ opacity: 0, display: 'none' }}
+            config={config.gentle}
+          >
+            {activeImage =>
+              activeImage &&
+              (styles => (
+                <Img
+                  style={{ ...styles }}
+                  fluid={activeImage.src}
+                  alt={activeImage.alt}
+                />
+              ))
+            }
+          </Transition>
           <StatusBar>
             <p>
               Font: <a href="https://dank.sh">Dank Mono</a>

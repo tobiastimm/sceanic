@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
@@ -91,64 +91,81 @@ const Download = styled.div`
   }
 `
 
-const IndexPage = () => (
-  <Layout>
-    <LanguageList />
-    <Container>
-      <Description>
-        <p>
-          Sceanic is a Visual Studio Code theme combining the best parts of 🚀
-          Spacegray and 🌊 Oceanic Next with some personal finishes 💅.
-        </p>
-        <p>
-          Heavily inspired by the great DA CS themes for Sublime Text, I've
-          ported my favorite one to vscode.
-        </p>
-      </Description>
-      <Download>
-        <div className="install-container-wrapper">
-          <h2>
-            <span>Install</span>
-          </h2>
-          <p>Do you want to try Sceanic?</p>
-          <div className="cli">
-            <label>Install via CLI</label>
-            <div className="code">
-              <pre>
-                <code>
-                  <span>$ </span>
-                  code --install-extension tobiastimm.sceanic
-                </code>
-              </pre>
+const IndexPage = props => {
+  return (
+    <Layout>
+      <LanguageList images={props.data.allImageSharp.edges} />
+      <Container>
+        <Description>
+          <p>
+            Sceanic is a Visual Studio Code theme combining the best parts of 🚀
+            Spacegray and 🌊 Oceanic Next with some personal finishes 💅.
+          </p>
+          <p>
+            Heavily inspired by the great DA CS themes for Sublime Text, I've
+            ported my favorite one to vscode.
+          </p>
+        </Description>
+        <Download>
+          <div className="install-container-wrapper">
+            <h2>
+              <span>Install</span>
+            </h2>
+            <p>Do you want to try Sceanic?</p>
+            <div className="cli">
+              <label>Install via CLI</label>
+              <div className="code">
+                <pre>
+                  <code>
+                    <span>$ </span>
+                    code --install-extension tobiastimm.sceanic
+                  </code>
+                </pre>
+              </div>
             </div>
-          </div>
-          <div className="cli">
-            <div className="instructions-header">
-              <label>Install via</label>
-              <svg
-                className="vs-code"
-                width="21"
-                height="22"
-                viewBox="0 0 21 22"
+            <div className="cli">
+              <div className="instructions-header">
+                <label>Install via</label>
+                <svg
+                  className="vs-code"
+                  width="21"
+                  height="22"
+                  viewBox="0 0 21 22"
+                >
+                  <path
+                    fill="#66747f"
+                    d="M21.9980902,7.05213528 L22,24.9558586 L17.0004653,27 L8.24542044,18.3059039 L2.9904497,22.3987722 L1,21.3771089 L1.00199979,10.6348745 L3.00181348,9.60581456 L8.26108889,13.7020894 L16.9946509,5 L21.9980902,7.05213528 Z M16.4966475,12.1654844 L11.4990677,15.9880111 L16.4986023,19.8405089 L16.4966475,12.1654844 Z M3.4986824,13.7064321 L3.50168388,18.3041032 L5.99842148,15.9897298 L3.4986824,13.7064321 Z"
+                    transform="translate(-1 -5)"
+                  />
+                </svg>
+              </div>
+              <a
+                className="download-btn"
+                href="https://marketplace.visualstudio.com/items?itemName=tobiastimm.sceanic"
               >
-                <path
-                  fill="#66747f"
-                  d="M21.9980902,7.05213528 L22,24.9558586 L17.0004653,27 L8.24542044,18.3059039 L2.9904497,22.3987722 L1,21.3771089 L1.00199979,10.6348745 L3.00181348,9.60581456 L8.26108889,13.7020894 L16.9946509,5 L21.9980902,7.05213528 Z M16.4966475,12.1654844 L11.4990677,15.9880111 L16.4986023,19.8405089 L16.4966475,12.1654844 Z M3.4986824,13.7064321 L3.50168388,18.3041032 L5.99842148,15.9897298 L3.4986824,13.7064321 Z"
-                  transform="translate(-1 -5)"
-                />
-              </svg>
+                Download
+              </a>
             </div>
-            <a
-              className="download-btn"
-              href="https://marketplace.visualstudio.com/items?itemName=tobiastimm.sceanic"
-            >
-              Download
-            </a>
           </div>
-        </div>
-      </Download>
-    </Container>
-  </Layout>
-)
+        </Download>
+      </Container>
+    </Layout>
+  )
+}
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    allImageSharp {
+      edges {
+        node {
+          fluid {
+            ...GatsbyImageSharpFluid
+            originalName
+          }
+        }
+      }
+    }
+  }
+`
