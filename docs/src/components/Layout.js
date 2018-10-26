@@ -11,9 +11,13 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     background-color: #1a2a32;
     color: #ced4de;
+    font-family: Menlo, monospace;
   }
   html, body, #___gatsby, #___gatsby>div {
     height: 100%
+  }
+  h2 {
+     font-family: Menlo, monospace;
   }
 `
 

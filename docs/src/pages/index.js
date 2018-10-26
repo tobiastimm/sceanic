@@ -88,6 +88,7 @@ const Download = styled.div`
     &:hover {
       background-color: #64727f;
     }
+    margin-bottom: 5rem;
   }
 `
 

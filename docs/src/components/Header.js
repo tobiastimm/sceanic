@@ -16,6 +16,7 @@ const StyledHeader = styled.header`
   h1 {
     font-weight: 400;
     text-align: center;
+    font-family: Menlo, monospace;
     font-style: italic;
   }
 
