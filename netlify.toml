@@ -7,5 +7,5 @@
 
 [build]
   base    = "docs"
-  publish = "public"
+  publish = "docs/public"
   command = "build"
