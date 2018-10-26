@@ -37,6 +37,8 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-progressive-image": "^0.6.0",
+    "react-spinners": "^0.4.7",
     "react-spring": "^6.1.2",
     "react-typography": "^0.16.13",
     "styled-components": "^4.0.2",
