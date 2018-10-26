@@ -94,7 +94,7 @@ const Download = styled.div`
 const IndexPage = props => {
   return (
     <Layout>
-      <LanguageList images={props.data.allImageSharp.edges} />
+      <LanguageList />
       <Container>
         <Description>
           <p>
@@ -154,18 +154,3 @@ const IndexPage = props => {
 }
 
 export default IndexPage
-
-export const query = graphql`
-  query {
-    allImageSharp {
-      edges {
-        node {
-          fluid {
-            ...GatsbyImageSharpFluid
-            originalName
-          }
-        }
-      }
-    }
-  }
-`

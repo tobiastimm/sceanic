@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
 import {
   mdiJson,
   mdiSass,
@@ -20,38 +19,56 @@ const languages = [
   {
     path: mdiReact,
     alt: 'react',
+    src:
+      'https://res.cloudinary.com/tobiastimm/image/upload/c_limit,w_1000/v1540570600/sceanic/react.png',
   },
   {
     path: mdiGraphql,
     alt: 'graphql',
+    src:
+      'https://res.cloudinary.com/tobiastimm/image/upload/c_limit,w_1000/v1540570600/sceanic/graphql.png',
   },
   {
     path: mdiLanguageJavascript,
     alt: 'js',
+    src:
+      'https://res.cloudinary.com/tobiastimm/image/upload/c_limit,w_1000/v1540570600/sceanic/js.png',
   },
   {
     path: mdiLanguageTypescript,
     alt: 'ts',
+    src:
+      'https://res.cloudinary.com/tobiastimm/image/upload/c_limit,w_1000/v1540570600/sceanic/ts.png',
   },
   {
     path: mdiLanguageHtml5,
     alt: 'html',
+    src:
+      'https://res.cloudinary.com/tobiastimm/image/upload/c_limit,w_1000/v1540570600/sceanic/html.png',
   },
   {
     path: mdiLanguageCss3,
     alt: 'css',
+    src:
+      'https://res.cloudinary.com/tobiastimm/image/upload/c_limit,w_1000/v1540570600/sceanic/css.png',
   },
   {
     path: mdiSass,
     alt: 'scss',
+    src:
+      'https://res.cloudinary.com/tobiastimm/image/upload/c_limit,w_1000/v1540570600/sceanic/scss.png',
   },
   {
     path: mdiJson,
     alt: 'json',
+    src:
+      'https://res.cloudinary.com/tobiastimm/image/upload/c_limit,w_1000/v1540570600/sceanic/json.png',
   },
   {
     path: mdiLanguageJava,
     alt: 'java',
+    src:
+      'https://res.cloudinary.com/tobiastimm/image/upload/c_limit,w_1000/v1540570600/sceanic/java.png',
   },
 ]
 const Wrapper = styled.div`
@@ -96,23 +113,13 @@ const StatusBar = styled.div`
   }
 `
 
-function findImage(name, images) {
-  const image = images.find(({ node: { fluid } }) =>
-    fluid.originalName.includes(name)
-  )
-  if (image) {
-    return image.node.fluid
-  }
-  return ''
-}
-
 class LanguageList extends Component {
   state = {
     languages: languages,
     activeLanguage: 0,
     activeImage: {
       alt: languages[0].alt,
-      src: findImage(languages[0].alt, this.props.images),
+      src: languages[0].src,
     },
   }
 
@@ -122,7 +129,7 @@ class LanguageList extends Component {
       activeLanguage: index,
       activeImage: {
         alt: languages[index].alt,
-        src: findImage(languages[index].alt, this.props.images),
+        src: languages[index].src,
       },
     }))
   }
@@ -152,10 +159,12 @@ class LanguageList extends Component {
             {activeImage =>
               activeImage &&
               (styles => (
-                <Img
+                <img
                   style={{ ...styles }}
-                  fluid={activeImage.src}
+                  src={activeImage.src}
                   alt={activeImage.alt}
+                  width="1000"
+                  height="808"
                 />
               ))
             }

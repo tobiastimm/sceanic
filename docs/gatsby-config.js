@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Sceanic - 🚀 Spacegray meets 🌊 Oceanic',
   },
+  pathPrefix: '/sceanic',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -22,14 +23,5 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
   ],
 }
