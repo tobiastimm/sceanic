@@ -1,3 +1,7 @@
+## 1.0.0
+
+- Renaming to Sceanic
+
 ## 0.3.1
 
 - Revert color for `async` keyword
