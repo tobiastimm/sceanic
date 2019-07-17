@@ -1,3 +1,7 @@
+## 1.1.0
+
+- Add more variants
+
 ## 1.0.0
 
 - Renaming to Sceanic

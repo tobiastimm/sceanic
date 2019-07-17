@@ -31,7 +31,22 @@
         "label": "Sceanic",
         "uiTheme": "vs-dark",
         "path": "./themes/sceanic.json"
+      },
+      {
+        "label": "Sceanic - Gray",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sceanic-gray.json"
+      },
+      {
+        "label": "Sceanic - Dark Gray",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sceanic-dark-gray.json"
       }
     ]
+  },
+  "__metadata": {
+    "id": "6bd6aeff-0bfb-4547-be4b-fe904181c31b",
+    "publisherDisplayName": "Tobias Timm",
+    "publisherId": "5e0244e1-b94f-4e44-8cdc-1397334a044f"
   }
 }
