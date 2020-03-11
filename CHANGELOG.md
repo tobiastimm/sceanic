@@ -1,3 +1,9 @@
+# Changelog
+
+## 1.1.1
+
+- Fix variable scope colors
+
 ## 1.1.0
 
 - Add more variants
